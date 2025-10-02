@@ -76,6 +76,14 @@ a {
   text-decoration: none;
 }
 
+a:visited {
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
 p {
   margin-bottom: 1rem;
 }
@@ -135,6 +143,7 @@ p {
   align-items: flex-start;
   max-width: 90rem;
   margin: 0 auto;
+  align-items: center;
 }
 
 #about .col-1,
@@ -164,9 +173,39 @@ p {
 
 /* Split columns */
 
-.split-container {
-  display: flex;
-}
 .split {
   flex: 1;
+}
+.split-container {
+  display: flex;
+  max-width: 90rem;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+.col-1 {
+  position: sticky;
+  top: 10rem;
+  height: fit-content;
+  align-self: flex-start;
+}
+
+.col-2 {
+  flex: 1;
+  margin-left: 2rem;
+}
+
+.col-1,
+.col-2 {
+  flex: 1;
+}
+
+/* Cards */
+
+.card {
+  border: 1px solid rgba(212, 209, 209, 0.151);
+  border-radius: 6px;
+  padding: 1rem;
+  max-width: 600px;
+  margin-bottom: 1rem;
 }
