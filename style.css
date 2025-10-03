@@ -185,6 +185,22 @@ p {
   color: var(--accent-color);
 }
 
+a.arrow-link {
+  color: var(--accent-color);
+  font-size: 0.9rem;
+  margin-left: 1rem;
+}
+
+.arrow-link i {
+  margin-left: 0.5rem;
+  transition: transform 0.2s;
+}
+
+.arrow-link:hover i {
+  transform: translateX(4px);
+  color: var(--accent-color-light);
+}
+
 /* Hero-section */
 
 #hero {
@@ -386,6 +402,12 @@ p {
   padding: 0.5rem 1rem;
   border-radius: 15px;
   font-family: "Roboto mono", sans-serif;
+}
+
+.card img {
+  margin-top: 1rem;
+  width: 400px;
+  height: auto;
 }
 
 /* Additional skills */
