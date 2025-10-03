@@ -62,7 +62,8 @@ nav .button {
 }
 
 @media only screen and (max-width: 768px) {
-  nav {
+  nav ul.open {
+    display: flex;
     flex-direction: column;
   }
   nav ul {
