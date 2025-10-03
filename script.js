@@ -3,4 +3,5 @@ const openMenu = document.querySelector("nav ul");
 
 hamburgerButton.addEventListener("click", () => {
   openMenu.classList.toggle("open");
+  hamburgerButton.classList.toggle("active");
 });
