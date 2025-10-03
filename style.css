@@ -25,6 +25,7 @@ nav {
   justify-content: space-between;
   padding: 1rem 2rem;
   background: transparent;
+  align-items: center;
 }
 
 nav ul {
@@ -40,7 +41,19 @@ nav a,
 #logo /* Remove logo */ {
   color: var(--secondary-color);
   font-family: "Roboto Mono";
-  font-weight: 300;
+  font-weight: 400;
+  letter-spacing: 1px;
+  transition: color 0.1s ease-in;
+}
+
+nav a:hover {
+  color: var(--white-color);
+}
+
+nav .button {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent-color);
 }
 
 @media only screen and (max-width: 600px) {
@@ -183,23 +196,31 @@ p {
   align-items: flex-start;
 }
 
-.col-1 {
+.split.col-1 {
   position: sticky;
   top: 10rem;
   height: fit-content;
   align-self: flex-start;
 }
 
-.col-2 {
+.split.col-2 {
   flex: 1;
   margin-left: 2rem;
 }
 
-.col-1,
-.col-2 {
+.split.col-1,
+.split.col-2 {
   flex: 1;
 }
 
+.split.col-1 h2,
+.split.col-1 h3 {
+  color: var(--white-color);
+}
+
+.split.col-1 ul {
+  margin-top: 4rem;
+}
 /* Cards */
 
 .card {
