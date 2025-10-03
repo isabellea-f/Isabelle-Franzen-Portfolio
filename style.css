@@ -13,6 +13,7 @@
   --accent-color-light: #a5f7fc;
   --white-color: #babebe;
   --black-color: #151616;
+  --grey-color: #a1a5a5;
 }
 
 body {
@@ -177,6 +178,7 @@ p {
 
 .button:hover {
   border: 1px solid var(--accent-color-light);
+  cursor: pointer;
 }
 
 .button a {
@@ -353,9 +355,48 @@ p {
 /* Cards */
 
 .card {
-  border: 1px solid rgba(212, 209, 209, 0.151);
   border-radius: 6px;
   padding: 1rem;
   max-width: 600px;
+  margin-bottom: 1rem;
+}
+
+.card .title {
+  color: var(--white-color);
+  font-size: 1rem;
+}
+
+.card .year {
+  color: var(--grey-color);
+  font-size: 0.9rem;
+}
+
+.card .year,
+.card .title {
+  font-family: "Roboto Mono", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+}
+
+.card-badge {
+  background-color: #336b6e7e;
+  color: var(--accent-color);
+  font-weight: 500;
+  font-size: 0.8rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  font-family: "Roboto mono", sans-serif;
+}
+
+/* Additional skills */
+
+#additional-skills {
+  margin-bottom: 4rem;
+}
+
+.badge-group .row {
+  display: flex;
+  gap: 5px;
+  justify-content: flex-start;
   margin-bottom: 1rem;
 }
