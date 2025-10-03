@@ -10,6 +10,7 @@
   --secondary-color: #656495;
   --light-blue-color: #4f7197;
   --accent-color: #5eced4;
+  --accent-color-light: #a5f7fc;
   --white-color: #babebe;
   --black-color: #151616;
 }
@@ -46,12 +47,12 @@ nav a,
   transition: color 0.1s ease-in;
 }
 
-nav a:hover {
+nav a:hover:not(.button) {
   color: var(--white-color);
 }
 
 nav .button {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 600;
   color: var(--accent-color);
 }
@@ -110,6 +111,11 @@ p {
   color: var(--accent-color);
   font-family: "Roboto mono", sans-serif;
   font-size: 1rem;
+  transition: border-color 0.2s ease-in;
+}
+
+.button:hover {
+  border: 1px solid var(--accent-color-light);
 }
 
 .button a {
