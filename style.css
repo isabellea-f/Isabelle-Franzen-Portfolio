@@ -57,16 +57,32 @@ nav .button {
   color: var(--accent-color);
 }
 
-@media only screen and (max-width: 600px) {
+#hamburger {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
   nav {
     flex-direction: column;
   }
   nav ul {
-    flex-direction: column;
-    padding-top: 0.5rem;
+    display: none;
   }
-  nav li {
-    padding: 0.5rem 0;
+
+  #hamburger {
+    display: block;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #hamburger span {
+    width: 25px;
+    height: 3px;
+    margin: 4px 0;
+    background-color: var(--accent-color);
   }
 }
 
