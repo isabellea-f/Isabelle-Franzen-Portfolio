@@ -255,51 +255,22 @@ a.arrow-link {
 
 #about {
   padding: 8rem 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  max-width: 80rem;
+  max-width: 70rem;
   margin: 0 auto;
   align-items: center;
   line-height: 1.8;
 }
 
-#about .col-1,
-#about .col-2 {
-  flex: 1;
-}
-
-#about .col-1 {
-  margin-right: 6rem;
-}
-
-#about .col-2 img {
-  position: relative;
-  width: 20rem;
-  height: 20rem;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: center top;
-}
-
 #about h2 {
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: var(--white-color);
   font-weight: 500;
 }
 
 @media only screen and (max-width: 600px) {
   #about {
-    flex-direction: column;
     padding: 1rem 2rem;
-  }
-
-  #about .col-1 {
-    margin-right: 0;
-  }
-  #about .col-2 img {
-    margin: 4rem 0;
   }
 }
 
