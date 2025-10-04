@@ -410,3 +410,84 @@ a.arrow-link {
   justify-content: flex-start;
   margin-bottom: 1rem;
 }
+
+/* Contact */
+
+#contact {
+  padding: 8rem 0;
+  display: flex;
+  max-width: 70rem;
+  margin: 0 auto;
+  align-items: center;
+  line-height: 1.8;
+}
+
+#contact .col-1,
+#contact .col-2 {
+  flex: 1;
+}
+
+#contact .col-1 {
+  margin-right: 6rem;
+}
+
+#contact .col-2 img {
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+#contact h2 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: var(--white-color);
+  font-weight: 500;
+}
+
+#contact ul {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+#contact img {
+  object-fit: contain;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#contact img.gmail {
+  height: 50px;
+}
+
+#contact img.github {
+  height: 50px;
+}
+
+#contact img.linkedin {
+  height: 30px;
+}
+
+#contact .img-logo {
+  filter: brightness(0) saturate(100%) invert(70%) sepia(100%) saturate(300%)
+    hue-rotate(160deg);
+  opacity: 0.35;
+}
+
+@media only screen and (max-width: 600px) {
+  #contact {
+    flex-direction: column;
+    padding: 1rem 2rem;
+  }
+
+  #contact .col-1 {
+    margin-right: 0;
+  }
+  #contact .col-2 img {
+    margin: 4rem 0;
+  }
+}
