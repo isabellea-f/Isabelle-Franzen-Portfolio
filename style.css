@@ -311,6 +311,7 @@ a.arrow-link {
 
 .split.col-1 ul {
   margin-top: 4rem;
+  margin-left: 10rem;
   font-size: 1.5rem;
 }
 
@@ -332,6 +333,13 @@ a.arrow-link {
     position: static;
     top: auto;
     margin-bottom: 2rem;
+  }
+
+  .split.col-1 ul {
+    /* margin-top: 4rem;
+    margin-left: 0;
+    font-size: 1.5rem; */
+    display: none;
   }
 
   .split.col-2 {
