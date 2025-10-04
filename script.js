@@ -27,22 +27,17 @@ hamburgerButton.addEventListener("click", () => {
   hamburgerButton.classList.toggle("active");
 });
 
+const offset = 2000;
+
 /* Link highlight on scroll */
 window.addEventListener("scroll", () => {
   const scrollPosition = window.scrollY;
 
-  [...aboutLink, ...resumeLinks, ...projectsLink, ...contactLink].forEach(
-    (link) => {
-      link.style.color = lightBlueColor;
-    }
-  );
+  [...resumeLinks, ...projectsLink, ...contactLink].forEach((link) => {
+    link.style.color = lightBlueColor;
+  });
 
   if (
-    scrollPosition >= aboutSection.offsetTop &&
-    scrollPosition < resumeSection.offsetTop
-  ) {
-    aboutLink.forEach((link) => (link.style.color = accentColor));
-  } else if (
     scrollPosition >= resumeSection.offsetTop &&
     scrollPosition < projectsSection.offsetTop
   ) {
