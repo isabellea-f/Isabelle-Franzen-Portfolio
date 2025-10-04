@@ -359,6 +359,9 @@ a.arrow-link {
 .card .title {
   color: var(--white-color);
   font-size: 1rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  text-wrap: balance;
 }
 
 .card .year {
@@ -387,6 +390,12 @@ a.arrow-link {
   margin-top: 1rem;
   width: 400px;
   height: auto;
+}
+
+@media (max-width: 600px) {
+  .card {
+    max-width: 80%;
+  }
 }
 
 /* Additional skills */
