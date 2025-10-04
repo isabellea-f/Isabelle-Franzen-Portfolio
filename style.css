@@ -388,13 +388,19 @@ a.arrow-link {
 
 .card img {
   margin-top: 1rem;
-  width: 400px;
+  width: 25rem;
   height: auto;
 }
 
 @media (max-width: 600px) {
   .card {
     max-width: 80%;
+  }
+
+  .card img {
+    margin-top: 1rem;
+    width: 400px;
+    height: auto;
   }
 }
 
@@ -461,15 +467,15 @@ a.arrow-link {
 }
 
 #contact img.gmail {
-  height: 50px;
+  height: 40px;
 }
 
 #contact img.github {
-  height: 50px;
+  height: 40px;
 }
 
 #contact img.linkedin {
-  height: 30px;
+  height: 20px;
 }
 
 #contact .img-logo {
@@ -484,10 +490,15 @@ a.arrow-link {
     padding: 1rem 2rem;
   }
 
+  #contact ul {
+    margin-top: 2rem;
+    justify-content: center;
+  }
+
   #contact .col-1 {
     margin-right: 0;
   }
   #contact .col-2 img {
-    margin: 4rem 0;
+    margin: 4rem 2rem;
   }
 }

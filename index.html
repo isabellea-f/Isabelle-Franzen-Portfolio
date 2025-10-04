@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <nav>
@@ -42,7 +43,7 @@
     </header>
     <main>
       <!-- About-section -->
-      <section id="about">
+      <section data-aos="fade-up" data-aos-duration="1000" id="about">
         <!-- Text column -->
         <h2>About</h2>
         <p>
@@ -218,5 +219,14 @@
       </section>
     </main>
     <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true,          
+    duration: 1000,      
+    easing: 'ease-out',  
+  });
+</script>
+
   </body>
 </html>
