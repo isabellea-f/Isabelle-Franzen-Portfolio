@@ -1,6 +1,7 @@
 const root = document.documentElement;
 const hamburgerButton = document.querySelector("#hamburger");
 const openMenu = document.querySelector("nav ul");
+const scrollIndicator = document.querySelector(".scroll-indicator");
 
 /* Sections */
 const aboutSection = document.querySelector("#about");
@@ -27,9 +28,16 @@ hamburgerButton.addEventListener("click", () => {
   hamburgerButton.classList.toggle("active");
 });
 
-const offset = 500;
+/* Bouncing arrow */
+
+scrollIndicator.addEventListener("click", () => {
+  const aboutSection = document.querySelector("#about");
+  aboutSection.scrollIntoView({ behavior: "smooth" });
+});
 
 /* Link highlight on scroll */
+const offset = 500;
+
 window.addEventListener("scroll", () => {
   const scrollPosition = window.scrollY + offset;
 
