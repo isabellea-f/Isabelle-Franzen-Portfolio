@@ -27,11 +27,11 @@ hamburgerButton.addEventListener("click", () => {
   hamburgerButton.classList.toggle("active");
 });
 
-const offset = 2000;
+const offset = 500;
 
 /* Link highlight on scroll */
 window.addEventListener("scroll", () => {
-  const scrollPosition = window.scrollY;
+  const scrollPosition = window.scrollY + offset;
 
   [...resumeLinks, ...projectsLink, ...contactLink].forEach((link) => {
     link.style.color = lightBlueColor;
