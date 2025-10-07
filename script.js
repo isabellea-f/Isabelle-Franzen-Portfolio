@@ -72,8 +72,29 @@ window.addEventListener("scroll", () => {
 
 const cursor = document.querySelector(".cursor");
 
-document.addEventListener("mousemove", function (event) {
-  console.log("Mouse X:", event.clientX, "Mouse Y:", event.clientY);
-  cursor.style.setProperty("--cursor-x", event.clientX + "px");
-  cursor.style.setProperty("--cursor-y,", event.clientY + "px");
+let mouseX = 0;
+let mouseY = 0;
+
+let currentX = 0;
+let currentY = 0;
+
+const delay = 0.7;
+
+document.addEventListener("mousemove", (event) => {
+  mouseX = event.clientX;
+  mouseY = event.clientY;
 });
+
+function animateCursor() {
+  /* Calculate how much to move the cursor */
+  currentX += (mouseX - currentX) * delay;
+  currentY += (mouseY - currentY) * delay;
+
+  /* Apply movement to the element visually */
+  cursor.style.top = currentY + "px";
+  cursor.style.left = currentX + "px";
+
+  requestAnimationFrame(animateCursor);
+}
+
+animateCursor();
