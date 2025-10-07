@@ -67,3 +67,13 @@ window.addEventListener("scroll", () => {
     projectsBottom: projectsSection.offsetTop + projectsSection.offsetHeight,
   });
 });
+
+/* Cursor light effect */
+
+const cursor = document.querySelector(".cursor");
+
+document.addEventListener("mousemove", function (event) {
+  console.log("Mouse X:", event.clientX, "Mouse Y:", event.clientY);
+  cursor.style.setProperty("--cursor-x", event.clientX + "px");
+  cursor.style.setProperty("--cursor-y,", event.clientY + "px");
+});
