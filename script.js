@@ -68,6 +68,8 @@ window.addEventListener("scroll", () => {
   });
 });
 
+console.log("hamburger loaded", hamburgerButton);
+
 /* Cursor light effect */
 
 const cursor = document.querySelector(".cursor");
@@ -78,7 +80,7 @@ let mouseY = 0;
 let currentX = 0;
 let currentY = 0;
 
-const delay = 0.7;
+const delay = 0.7; // Lower = longer delay
 
 document.addEventListener("mousemove", (event) => {
   mouseX = event.clientX;
