@@ -422,6 +422,7 @@ a.arrow-link {
   margin-top: 1rem;
   width: 25rem;
   height: auto;
+  border-radius: 8px;
 }
 
 @media (max-width: 600px) {
