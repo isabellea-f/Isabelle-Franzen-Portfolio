@@ -443,9 +443,9 @@ a.arrow-link {
 }
 
 .badge-group .row {
-  display: flex;
+  /*   display: flex;
   gap: 5px;
-  justify-content: flex-start;
+  justify-content: flex-start; */
   margin-bottom: 1rem;
 }
 
@@ -549,6 +549,24 @@ a.arrow-link {
     rgba(102, 141, 158, 0) 60%
   );
   transform: translate(-50%, -50%);
-  transition: width 0.3s ease, height 0.3s ease, background 0.3s ease;
+  transition:
+    width 0.3s ease,
+    height 0.3s ease,
+    background 0.3s ease;
   z-index: 1;
+}
+
+/* Images */
+
+.img-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.img-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.185);
+  pointer-events: none;
 }
